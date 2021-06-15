@@ -10,7 +10,7 @@ public class Contador implements IContador {
     }
     public String obtenerTexto() {
         x++;
-        String ret = x + estrategiaAgregaTexto.apply(x);
+        String ret = x + " " + estrategiaAgregaTexto.apply(x);
         return ret;
     }
 }

@@ -14,13 +14,15 @@ public class App {
                 throw new RuntimeException("Debe enviar [txt, html]");
             }
             if (args[0].contains("txt")) {
-                archSalida = "/tmp/salida.txt";
+                archSalida = "./salida.txt";
             }
             if (args[0].contains("html")) {
-                archSalida = "/tmp/salida.html";
+                archSalida = "./salida.html";
             }
 
-            IContador contadorComun = new Contador(z -> " hola");
+            IContador contadorComun = new Contador(
+                    new IndicadorNumerosPrimosOptimo()
+            );
             IContador contadorWrapper = new ContadorWrapper(contadorComun);
             IContador icont = null;
 

@@ -1,1 +1,1 @@
-java -cp build\libs\tmp.jar edu.it.App %*
+java -cp build\libs\decorator.jar edu.it.App %*

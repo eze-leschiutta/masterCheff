@@ -1,0 +1,39 @@
+Trabajo para la segunda clase
+
+Leer los principios SOLID
+
+https://es.wikipedia.org/wiki/SOLID
+
+Buscar algun tutorial de youtube de el patron decorator
+Buscar material sobre el patron facade se pronuncia fasad (fachada)
+
+Los que tengan mas conocimientos de c# ir traduciendo el codigo
+de java a c#.
+
+Implementar la estrategia IndicadorNumerosPrimosOptimo
+
+Quedo a medio camino, el tema del wrapper de HTML
+ver si se puede utilizar la configuracion de consola para este 
+wrapper o decorator.
+
+Ramon, Monica, Diego (Los tres aportando material y codificando la solucion
+optima para la busqueda de numeros primos)
+
+Como probamos la solucion optima ?
+Hacemos un conteo de [1..500]
+
+Vayan pensando que lo interesante de todo esto es que:
+
+Puedo instanciar esta clase y utilzarla de manera aislada como
+para probar mi algoritmo. Cosa que NO puedo hacer si cada objeto
+tuviera muchas resposabilidades
+IndicadorNumerosPrimosOptimo
+
+Vamos a ver un ejemplo
+
+public void main(String... params) {
+   for (int x = 1; x < 500; x++) {
+       new IndicadorNumerosPrimosOptimo().apply(x)
+   }
+}
+
