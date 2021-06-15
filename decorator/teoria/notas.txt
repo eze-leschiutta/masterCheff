@@ -1,0 +1,10 @@
+Principios SOLID
+
+S Single Responsability principle
+O Open closed principle
+L 
+I
+D
+
+
+
