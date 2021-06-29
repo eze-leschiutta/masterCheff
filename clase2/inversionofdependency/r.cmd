@@ -1,0 +1,1 @@
+java -cp build\libs\inversionofdependency.jar edu.it.Init %*

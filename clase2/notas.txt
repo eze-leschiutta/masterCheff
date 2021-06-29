@@ -1,0 +1,135 @@
+
+Funcion pura.
+Objeto.
+Inmutabilidad.
+
+Procedure o Function
+En java todo se llama metodo.
+
+function r(Integer a) {
+   if (a > 1) {
+      retrn 0;
+   }
+   return 100;
+}
+
+Es una funcion pura ? o es una funcion impura ?
+
+function s(Integer a) {
+   if (new Date().dayOfWeek == Date.Thuesday) {
+      return 0;
+   }
+   if (a > 0) {
+      return 1;
+   }
+   return 100;
+}
+
+r(4) -> 0 Deterministico
+s(4) -> ? No deterministico
+
+------------------------------------------------------
+
+CalculoDeIva(Importe, tipoDeContribuyente, ZonaGeografica) {
+   if (tipoDeContribuyente==HOTEL) {
+      return Importe * 1.11;
+   }
+}
+
+getDayOfWeek() es impura porque no es deterministica.
+
+------------------------------------------------------
+
+Ejercicio: 
+
+Preambulo del ejercicio: Una funcion pura, es en realidad
+un mapa que tiene una key y un value, donde dada una key
+siempre responde el mismo value.
+
+Ejemplos:
+
+supongamos que tenemos el conjunto de datos (1,3,7)
+y tenemos la operacion suma.
+
+(1,3) -> 4
+(1,7) -> 8
+(3,7) -> 10
+
+(3,1) -> 4
+(7,1) -> 8
+(7,3) -> 10
+
+Escriban la funcion Piedra papel o tijera pero sin logica.
+un mapa donde voy a tener dos inputs y un output
+
+Integer[][] mapaDePPT; // Ver ejemplo de Piedra papel o tijera.
+
+------------------------------------------------------
+
+Dado las cien jugadas de Piedra papel o tijera
+
+Quiero hacer un sistema de apuestas donde se implement los siguientes tipos de apuestas
+
+Si gana un jugador tres veces consecutivas ? se paga 10 a 1
+Si gana el jugador x mas partidas que el contrincante ? se paga 2 a 1
+Si gana el Jugador x cinco veces consecutivas ? se paga 50 a 1
+
+Para esto tengo que: Extender o implementar NotificarApostador y en esos objetos 
+mantener el estado de la apuesta comp para ver si se paga o no.
+Gana la casa o gana el apostador.
+
+Apartado: Yo podria programar el sistema de apuestas SIN TENER el codigo de las cien jugadas
+SIN TENER el codigo del piedra papel o tijera.
+
+-----------------------------------------------------------------
+Este es el core o el espiritu de Single Responsability principle
+------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------
+Inversion of dependency
+-----------------------------------------------------------------
+
+@Autowired vs Inversion of Dependency
+
+@Autowired tenemos que en tiempo de ejecuccion se va a acoplar un modulo
+
+Los modulos NO tienen niveles de predominancia, ambos: el de mas bajo y nivel
+y el de mas alto nivel, ambos dependen de una abstraccion.
+
+el @Autowired No garantiza que estes inyectando una abstraccion o una interfaz.
+
+Pero lo mas importante es que el autowired requiere de un compilador.
+
+@Autowired
+Interfaz1 servicio1;
+
+Si interfaz1 es una abstraccion que impementan dos modulos ? entonces
+el autowired sirve para los efectos de inversion de dependencia.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
