@@ -1,0 +1,1 @@
+java %* -cp build\libs\facade.jar edu.it.Init 

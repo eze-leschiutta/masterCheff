@@ -1,0 +1,1 @@
+java -cp build\libs\templateMethod.jar edu.it.Init %*

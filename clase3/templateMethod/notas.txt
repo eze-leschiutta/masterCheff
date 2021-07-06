@@ -1,0 +1,14 @@
+abstract class Template {
+   public void metodoConcreto() {
+      for (int x = 1; x < 10; x++) {
+          onIteracion(x);     
+      }
+   }
+   protected abstract void onIteracion(int x);
+}
+
+class Impl1 extends Template {
+   public void onIteracion(int x) {
+       sout("Implementacion 1: " + x)
+   }
+}

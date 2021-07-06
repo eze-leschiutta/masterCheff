@@ -1,0 +1,22 @@
+Tenemos un http server.
+Tenemos un procesarurl
+
+Lo que falta es: mapear cada url a un servicio
+ese mapeo deberia estar en github con un formato 
+que tenga estas características.
+
+"servicios" : [
+  {
+     "url" : "/diego",
+     "servicio" : "edu.it.DiegoReyes" 
+  },
+  {
+     "url" : "/enzo",
+     "servicio" : "edu.it.EnzoMeza"
+  }
+]
+
+Ir pensando, si se puede 
+
+como procesar un post en vez de un get
+
