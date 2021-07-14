@@ -1,0 +1,1 @@
+java -cp build\libs\adapter.jar edu.it.Init %*
