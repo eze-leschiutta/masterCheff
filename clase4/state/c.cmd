@@ -1,0 +1,1 @@
+gradle --console verbose installDist

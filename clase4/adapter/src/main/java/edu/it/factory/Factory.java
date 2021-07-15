@@ -1,10 +1,11 @@
 package edu.it.factory;
 
-import edu.it.services.Discador;
+import dialerpluspro.DialerPro;
+import edu.it.services.DialerPlusProAdapter;
 import edu.it.services.ProcesoDiscado;
 
 public class Factory {
     public static ProcesoDiscado crearDiscador() {
-        return new ProcesoDiscado(new Discador());
+        return new ProcesoDiscado(new DialerPlusProAdapter(new DialerPro()));
     }
 }
